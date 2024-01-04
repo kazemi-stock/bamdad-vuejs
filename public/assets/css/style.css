@@ -1,0 +1,466 @@
+.cards-content {
+    margin-top: 112px;
+    position: relative;
+    height: 135px;
+}
+
+.active {
+    margin-top: -20px !important;
+    transform: scale(1.02);
+    transition: all 700ms;
+}
+
+.language-content {
+    position: absolute;
+    left: 0;
+}
+
+.meeting-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.program-content {
+    position: absolute;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    .cards-content {
+        height: 466px;
+    }
+
+    .card-meeting {
+        top: 165px;
+    }
+
+    .card-language {
+        top: 330px;
+    }
+}
+
+.card {
+    height: 132px !important;
+    padding: 16px !important;
+    flex-direction: column !important;
+    text-align: right !important;
+    border-radius: 16px !important;
+    cursor: pointer;
+}
+
+.card .card-body {
+    padding: 0 !important;
+}
+
+.card .card-body h3 {
+    display: block;
+    margin: 8px 0;
+    color: #FFF;
+    font-family: Yekan Bakh !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 900 !important;
+    line-height: normal !important;
+}
+
+.card-program {
+    background: linear-gradient(270deg, #FF9E2D 0%, #FFBD6F 100%);
+    box-shadow: 0 54px 40px -44px #FFC989;
+}
+
+.card-meeting {
+    border-radius: 16px;
+    background: linear-gradient(270deg, #8A75F8 0%, #AA98FD 100%);
+    box-shadow: 0 54px 40px -44px #B7A9FF;
+}
+
+.card-language {
+    border-radius: 16px;
+    background: linear-gradient(270deg, #F55787 0%, #FE89B5 100%);
+    box-shadow: 0 54px 40px -44px #FF8EB4;
+}
+
+.card-program-icon {
+    display: inline-block;
+    padding: 4px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.card-meeting-icon {
+    display: inline-block;
+    padding: 4px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.card-language-icon {
+    display: inline-block;
+    padding: 4px;
+    align-items: flex-start;
+    gap: 8px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 0.10);
+}
+
+.card-divider {
+    width: 100% !important;
+    stroke-width: 1px;
+    stroke: var(--White, #FFF);
+}
+
+.details-content {
+    background: #FFF url("../images/Dots-bg.png");
+    background-position: right 0;
+    background-repeat: no-repeat;
+    padding: 50px;
+    margin-top: -20px;
+}
+
+.card-details {
+    height: 212px;
+    margin: 0 auto !important;
+    padding: 16px 16px 25px 16px !important;
+    flex-shrink: 0 !important;
+    text-align: right !important;
+    border-radius: 24px !important;
+    background: #F5F6FF !important;
+    z-index: 1000 !important;
+}
+
+.card-details ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0 !important;
+}
+
+.card-details ul li {
+    padding: 8px 16px;
+}
+
+.dashed-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 589px;
+    height: 575px;
+    background: transparent url("../images/dashed-bg.png") no-repeat;
+}
+
+.circle-bg {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    width: 529px;
+    height: 525px;
+    background: transparent url("../images/circle-bg.png") no-repeat;
+}
+
+.master {
+    position: relative;
+    text-align: center;
+    margin-top: 277px;
+}
+
+.master-content {
+    position: relative;
+    margin: 40px 85px 0 0;
+    text-align: right;
+    direction: rtl;
+}
+
+.master-title {
+    color: var(--Purple-Main, #525FE1);
+    text-align: right;
+    font-family: Yekan Bakh;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+}
+
+.master-text {
+    color: var(--Gray-1, #333);
+    text-align: right;
+    font-family: Yekan Bakh;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.btn-master {
+    display: inline-block !important;
+    padding: 12px 16px !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 12px !important;
+    border-radius: 8px !important;
+    background: var(--Purple-Linear, linear-gradient(263deg, #626FF2 0%, #3347B0 105.81%)) !important;
+    color: #FFF;
+}
+
+
+.border-svg {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+.border-svg path{
+    fill: none;
+    stroke: #525FE1;
+    stroke-width: 5;
+    stroke-dasharray: 10, 10;
+}
+
+
+.master-card-content {
+    width: 421px;
+    text-align: center;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.master-active {
+    border-radius: 24px;
+    border: dashed 1px #525FE1;
+    z-index: 1000 !important;
+}
+
+.master-card {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    text-align: right;
+    border-radius: 19.003px;
+    opacity: 0.6;
+    background: var(--Purple3, #F5F6FF);
+}
+
+.master-card-active {
+    opacity: 1.0 !important;
+    border-radius: 24px !important;
+    background: var(--Purple-Linear, linear-gradient(263deg, #626FF2 0%, #3347B0 105.81%)) !important;
+}
+
+.master-card-active .content p {
+    color: #FFF !important;
+}
+
+.upItem {
+    top: 100px;
+    left: 0;
+}
+
+.centerItem {
+    top: unset;
+    right: 0;
+}
+
+.downItem {
+    bottom: 15px;
+}
+
+.upCenter {
+    right: 0;
+    position: relative;
+    animation-name: upCenterAnim;
+    animation-duration: 200ms;
+}
+
+@keyframes upCenterAnim {
+    0% {
+        left: 0px;
+        top: 100px;
+    }
+    /*25%  {left:140px; top:170px;}*/
+    50% {
+        left: 290px;
+        top: 185px;
+    }
+    75% {
+        left: 340px;
+        top: 220px;
+    }
+    100% {
+        left: 372px;
+        top: 270px;
+    }
+}
+
+.centerDown {
+    bottom: 15px;
+    right: unset;
+    position: relative;
+    animation-name: centerDownAnim;
+    animation-duration: 200ms;
+}
+
+@keyframes centerDownAnim {
+    0% {
+        right: 0;
+        bottom: 230px;
+    }
+    25% {
+        right: 80px;
+        bottom: 110px;
+    }
+    50% {
+        right: 160px;
+        bottom: 60px;
+    }
+    75% {
+        right: 240px;
+        bottom: 25px;
+    }
+    100% {
+        right: 360px;
+        bottom: 15px;
+    }
+}
+
+.downCenter {
+    right: 0;
+    position: relative;
+    animation-name: downCenterAnim;
+    animation-duration: 200ms;
+}
+
+@keyframes downCenterAnim {
+    0% {
+        left: 10px;
+        bottom: 15px;
+    }
+    /*25%  {left:140px; top:170px;}*/
+    50% {
+        left: 190px;
+        bottom: 70px;
+    }
+    75% {
+        left: 280px;
+        bottom: 130px;
+    }
+    100% {
+        left: 352px;
+        bottom: 200px;
+    }
+}
+
+.centerUp {
+    top: 100px;
+    left: 0;
+    position: relative;
+    animation-name: centerUpAnim;
+    animation-duration: 200ms;
+}
+
+@keyframes centerUpAnim {
+    0% {left: 372px;top: 270px;}
+    25% {left: 240px;top: 130px;}
+    /*50% {left: 240px;top: 130px;}*/
+    /*75% {left: 240px;top: 130px;}*/
+    100% {left: 0px;top: 100px;}
+}
+
+
+.master-card-content .master-card .title {
+    display: inline-block;
+    margin-right: 8px;
+    text-align: right !important;
+}
+
+.master-card-content .master-card img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    margin-top: -60px;
+}
+
+.master-card-content .master-card .title h3 {
+    display: block;
+    margin-bottom: 8px !important;
+    color: var(--White, #FFF);
+    text-align: right;
+    font-family: Yekan Bakh;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+}
+
+.master-card-content .master-card .title h6 {
+    display: block;
+    margin-bottom: 0 !important;
+    color: var(--Orange1, #FF9B64);
+    text-align: right;
+    font-family: Yekan Bakh;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 20px; /* 142.857% */
+}
+
+.master-card-content .master-card .title p {
+    display: block;
+    padding-top: 4px;
+    color: var(--Purple2, #BABFF8);
+    text-align: right;
+    /* 12 Reg */
+    font-family: Yekan Bakh;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.master-card-content .master-card .title p > svg {
+    margin-left: 10px;
+    padding-bottom: 3px;
+}
+
+.master-card-content .master-card svg {
+    float: left;
+}
+
+.master-card-content .master-card .content p {
+    color: var(--White, #000);
+    margin: 16px 0 4px 0 !important;
+    direction: rtl !important;
+    text-align: right;
+    font-family: Yekan Bakh;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    align-self: stretch;
+}
+
+.master-card-content .master-card .btn-footer {
+    display: block;
+    padding: 12px 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+    border-radius: 8px;
+    background: var(--Purple-Main, #525FE1);
+    float: left;
+}
+
+.master-card-content .master-card .btn-footer svg{
+    margin-top: 8px;
+    margin-right: 12px;
+}
+
